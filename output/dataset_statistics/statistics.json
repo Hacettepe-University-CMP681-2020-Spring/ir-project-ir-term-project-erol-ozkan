@@ -1,0 +1,32 @@
+{
+    "news_resources/haberturk_com": {
+        "number_of_documents": 165,
+        "avarage_query_length": 7.933333333333334,
+        "avarage_text_length": 382.1878787878788
+    },
+    "news_resources/milliyet_com_tr": {
+        "number_of_documents": 453,
+        "avarage_query_length": 7.066225165562914,
+        "avarage_text_length": 431.6666666666667
+    },
+    "news_resources/hurriyet_com_tr": {
+        "number_of_documents": 523,
+        "avarage_query_length": 6.994263862332696,
+        "avarage_text_length": 353.4244741873805
+    },
+    "news_resources/ntv_com_tr": {
+        "number_of_documents": 57,
+        "avarage_query_length": 7.7894736842105265,
+        "avarage_text_length": 385.8421052631579
+    },
+    "news_resources/tr_sputniknews_com": {
+        "number_of_documents": 593,
+        "avarage_query_length": 9.136593591905564,
+        "avarage_text_length": 269.3204047217538
+    },
+    "news_resources/cnnturk_com": {
+        "number_of_documents": 280,
+        "avarage_query_length": 6.55,
+        "avarage_text_length": 298.53214285714284
+    }
+}

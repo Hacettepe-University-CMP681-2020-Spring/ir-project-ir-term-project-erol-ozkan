@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <script>
+        function search() {
+            if (document.getElementById("search_input").value == "") {
+                alert("Lütfen tüm alanları doldurunuz.");
+            } else {
+                document.forms[0].submit();
+            }
+        }
+    </script>
+    <div class="container landing-page">
+        <div class="row">
+            <div style="text-align:center;">
+                <a href="/"><img src="../static/img/search.png" style="max-width: 40%;"></a>
+            </div>
+        </div>
+        <form action="/search" method="get">
+            <div class="input-group col-md-8 col-md-offset-2">
+                <div class="input-group">
+                    <input id="search_input" class="form-control input-lg" name="query" autofocus required>
+                    <div class="input-group-addon btn" onclick="search()"> Ara</div>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+    <div class="landing-page" style="width: 75%;   margin: 0 auto;">
+        <h2 style="padding-left: 30px">Toplamda {{ search_results|length }} sonuç bulundu. </h2>
+        <br>
+        <section class="col-xs-12 col-md-12">
+            {% for score, article in search_results %}
+                <div class=flash>{{ message }}</div>
+                <article class="search-result row">
+                    <div class="col-xs-12 col-sm-3">
+                        <a href="{{ article.url }}" title="{{ article.title }}" class="thumbnail" style="border: 0 none;box-shadow: none;"><img src="{{ article.top_img }}" style="height:155px; width: 280px;"/></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <p><a href="{{ article.url }}" title="{{ article.title }}" style="font-size:25px">{{ article.title }}</a></p>
+                        <p>{{ article.canonical_link }}</p>
+                        <p>{{ (article.summary[:200] + '...') if article.summary|length > 280 else article.summary }}</p>
+                        <div class="row">
+                            <div class="col-xs-3"><span>Score: {{ '%.2f' % score }}</span></div>
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+{% endblock %}

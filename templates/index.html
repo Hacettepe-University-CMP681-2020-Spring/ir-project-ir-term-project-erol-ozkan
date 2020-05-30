@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <script>
+        function search() {
+            if (document.getElementById("search_input").value == "") {
+                alert("Lütfen tüm alanları doldurunuz.");
+            } else {
+                document.forms[0].submit();
+            }
+        }
+    </script>
+    <div class="container landing-page" style="text-align: center">
+        <br> <br> <br> <br>
+        <div class="col-md-8 col-md-offset-2">
+            <img src="../static/img/search.png" onclick="location.href='./';" style="max-width: 95%;">
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+            <br> <br> <br>
+            <form action="/search" method="get">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input id="search_input" class="form-control input-lg" name="query" autofocus required>
+                        <div class="input-group-addon btn" onclick="search()"> Ara</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

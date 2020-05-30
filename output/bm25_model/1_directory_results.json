@@ -1,0 +1,26 @@
+{
+    "news_resources/haberturk_com": {
+        "mean_reciprocal_rank": 0.6139874674736854,
+        "mean_average_precision": 0.6139874674736854
+    },
+    "news_resources/milliyet_com_tr": {
+        "mean_reciprocal_rank": 0.6674604586396603,
+        "mean_average_precision": 0.6674604586396603
+    },
+    "news_resources/hurriyet_com_tr": {
+        "mean_reciprocal_rank": 0.6574949552236896,
+        "mean_average_precision": 0.6574949552236896
+    },
+    "news_resources/ntv_com_tr": {
+        "mean_reciprocal_rank": 0.7411623355246645,
+        "mean_average_precision": 0.7411623355246645
+    },
+    "news_resources/tr_sputniknews_com": {
+        "mean_reciprocal_rank": 0.8796796065772752,
+        "mean_average_precision": 0.8796796065772752
+    },
+    "news_resources/cnnturk_com": {
+        "mean_reciprocal_rank": 0.6353313061987003,
+        "mean_average_precision": 0.6353313061987003
+    }
+}

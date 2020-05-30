@@ -1,2 +1,4 @@
-# ir-project-ir-term-project-erol-ozkan
-ir-project-ir-term-project-erol-ozkan
+# news_retrieval
+required nltk modules:
+- punkt
+- stopwords
