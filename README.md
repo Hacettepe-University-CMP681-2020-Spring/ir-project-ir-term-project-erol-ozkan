@@ -1,3 +1,5 @@
+# How to Run
+
 **Anaylze Dataset:** run python3 run_01_analyze_dataset.py  
 **Create tf-idf model:** run python3 run_02_index_creation.py  
 **Create bm25 model:** run python3 run_03_index_creation_bm25.py  
