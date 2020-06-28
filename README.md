@@ -1,13 +1,13 @@
-**Anaylze Dataset:** run python3 run_01_analyze_dataset.py
-**Create tf-idf model:** run python3 run_02_index_creation.py
-**Create bm25 model:** run python3 run_03_index_creation_bm25.py
-**Search for a single query using tf-idf model:** run python3 run_04_search_query.py
-**Search for a single query using bm25 model:** run python3 run_05_search_query_bm25.py
-**Evaluate tf-idf model with the dataset:** run python3 run_06_evaluate.py
-**Evaluate bm25 model with the dataset:** run python3 run_07_evaluate_bm25.py
-**Create statistics using both models:** run python3 run_08_evaluate_statistics.py
-**Start user-interface using tf-idf model:** run python3 run_09_user_interaction.py
-**Start user-interface using bm25 model:** run python3 run_10_user_interaction_bm25.py
+**Anaylze Dataset:** run python3 run_01_analyze_dataset.py  
+**Create tf-idf model:** run python3 run_02_index_creation.py  
+**Create bm25 model:** run python3 run_03_index_creation_bm25.py  
+**Search for a single query using tf-idf model:** run python3 run_04_search_query.py  
+**Search for a single query using bm25 model:** run python3 run_05_search_query_bm25.py  
+**Evaluate tf-idf model with the dataset:** run python3 run_06_evaluate.py  
+**Evaluate bm25 model with the dataset:** run python3 run_07_evaluate_bm25.py  
+**Create statistics using both models:** run python3 run_08_evaluate_statistics.py  
+**Start user-interface using tf-idf model:** run python3 run_09_user_interaction.py  
+**Start user-interface using bm25 model:** run python3 run_10_user_interaction_bm25.py  
 
 # news_retrieval
 required nltk modules:
